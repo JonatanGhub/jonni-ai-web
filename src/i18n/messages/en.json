@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "title": "Jonatan García Ripollés — Agentic Developer & AI Expert",
+    "description": "Industrial engineer, agentic developer and founder of NeoNexAI Agency. I design and run AI systems that actually work: voice agents, automations and custom software in production."
+  },
+  "nav": {
+    "now": "Now",
+    "projects": "Projects",
+    "path": "Path",
+    "stack": "Stack",
+    "work": "Method",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Profile",
+    "name": "Jonatan García Ripollés",
+    "roles": "Industrial Engineer · Agentic Developer · AI Expert · CEO & Founder of NeoNexAI AGENCY",
+    "intro": "I design and run AI systems that actually work: custom professional websites, voice agents, phone assistants and automations for companies, SMBs and small businesses that want to automate their day-to-day.",
+    "ctaProjects": "See projects",
+    "ctaContact": "Talk to me",
+    "location": "Castellón, Spain"
+  },
+  "now": {
+    "label": "Now",
+    "title": "I founded NeoNexAI Agency.",
+    "body": "In 2026 I started my own AI agency for companies and SMBs. Everything below is in production, with real clients — not weekend projects.",
+    "metricProjects": "services in production",
+    "metricClients": "sectors served",
+    "metricUptime": "agent operation"
+  },
+  "projects": {
+    "label": "Projects in production",
+    "title": "What I've built",
+    "lead": "Every project is live and verifiable. The proof is that it works with clients, not the promise.",
+    "live": "In production",
+    "p1": {
+      "name": "neonexai.com",
+      "tag": "Web + product",
+      "desc": "Scroll-driven cinematic landing and the whole brand ecosystem for my agency. Designed, built and operated by me end to end.",
+      "b1": "Next.js · React · scroll-linked GSAP animation",
+      "b2": "Trilingual, technical SEO and custom conversion analytics"
+    },
+    "p2": {
+      "name": "Client portal",
+      "tag": "Multi-tenant web app",
+      "desc": "A web app where our clients see and manage every service they've hired, all in one place.",
+      "b1": "Bookings, orders and kitchen in real time, per venue",
+      "b2": "AI academy, deliverables and billing built in"
+    },
+    "p3": {
+      "name": "Open-source projects",
+      "tag": "GitHub",
+      "desc": "Tools I ship in the open, with clients using them daily.",
+      "b1": "Custom Claude connectors for an architecture studio: quotes, CAD and time tracking (PyPI + npm, with CI)",
+      "b2": "A bot that keeps the machine active 24/7 to mine Grass points without having to sit in front of it"
+    },
+    "p4": {
+      "name": "Custom premium websites",
+      "tag": "Bespoke design",
+      "desc": "Websites of all kinds for any service sector and beyond.",
+      "b1": "Restaurants: automatic bookings, digital QR menu and WhatsApp confirmation",
+      "b2": "Bespoke design per client — no templates, no third-party lock-in"
+    },
+    "p5": {
+      "name": "Phone voice agent",
+      "tag": "Conversational AI",
+      "desc": "An AI assistant that answers the business phone and works while the team does other things.",
+      "b1": "Takes bookings automatically and matches them to live capacity",
+      "b2": "Handles customers and screens potential-lead calls, 24/7"
+    }
+  },
+  "path": {
+    "label": "Path",
+    "title": "From engineering to agents",
+    "now": {
+      "period": "2026 — now",
+      "role": "Founder & CEO",
+      "org": "NeoNexAI Agency",
+      "desc": "From zero to production systems with clients on the books, alongside my job at IGEX. I design the architecture, write the code and run the infrastructure."
+    },
+    "igex": {
+      "period": "Apr 2024 — now",
+      "role": "Engineer & project manager",
+      "org": "IGEX ESTUDIOS",
+      "desc": "Energy efficiency: audits, certifications and complex thermal systems. I've planned and coordinated 10+ simultaneous projects, with budgets of over €500,000 in a single project. This is where it all started: frustrated by the hours lost to repetitive tasks, I automated document management with Python and n8n and a 2-hour task dropped to 5 minutes. That first win hooked me — I haven't stopped building AI agents and redesigning processes so the machine takes the tedious part and people keep the judgment."
+    },
+    "master": {
+      "period": "2022 — 2024",
+      "role": "Master's in Industrial Engineering",
+      "org": "Universitat Jaume I (UJI)",
+      "desc": "Systems optimization, process improvement (Lean, Six Sigma), energy management and industrial sustainability."
+    },
+    "degree": {
+      "period": "2018 — 2022",
+      "role": "BSc in Industrial Technologies Engineering",
+      "org": "Universitat Jaume I (UJI)",
+      "desc": "Technical foundations: thermodynamics, fluid mechanics, thermal systems, electricity, materials and engineering projects."
+    },
+    "resto": {
+      "period": "2018 — 2022",
+      "role": "Waiter and kitchen assistant",
+      "org": "La Terraseta del Temple restaurant",
+      "desc": "Four years of service under real pressure, awarded the Repsol Guide Solete. Life comes full circle: its sister restaurant, El Nou Temple, is now a client of my agency."
+    }
+  },
+  "stack": {
+    "label": "Stack",
+    "title": "What I work with",
+    "ai": {
+      "title": "AI and agents",
+      "items": "Claude Code · Multi-agent architectures · MCP (custom connectors) · RAG · Context engineering · Loop Engineering · Guardrails · VAPI (voice) · LLM orchestration · Prompt engineering"
+    },
+    "dev": {
+      "title": "Development and automation",
+      "items": "Python · TypeScript · Next.js and React · Docker · n8n · PostgreSQL / Supabase · REST APIs · Git · 3D web · Linux / VPS"
+    },
+    "eng": {
+      "title": "Engineering and energy",
+      "items": "Thermal systems and HVAC · Renewables (solar, aerothermal, biomass) · Energy audits · ISO 50001 · CYPE · TESTO · AISLAM · Project management (Lean, Six Sigma)"
+    }
+  },
+  "work": {
+    "label": "Method",
+    "title": "How I work",
+    "hitl": {
+      "title": "Human in the loop + Loop Engineering",
+      "body": "AI does the heavy lifting; I audit, iterate and sign off. I work with Loop Engineering: I design the context and instructions so coding agents extend their own capabilities, self-evaluate what they produce, verify and iterate on their own, and hand me back a result that's already been cleaned up. I never promise what the tech can't deliver — honesty is the argument."
+    },
+    "discipline": {
+      "title": "High-performance discipline",
+      "body": "I built a personal ecosystem of training, nutrition and rest — not as a new-year resolution, but as a pillar and foundation of my everyday. That strict consistency is the same one I apply to every project: systems over impulses, repetition over luck. Resilience and constant improvement are the engine behind every architecture I orchestrate."
+    },
+    "curiosity": {
+      "title": "Curiosity underneath",
+      "body": "I study physics and quantum physics out of genuine curiosity and for the ambition of its possible fusion with AI in the future. Without chasing credentials: it's an exploration that gives me tools for abstract, creative analysis to deconstruct technical problems from angles no AI course teaches."
+    }
+  },
+  "education": {
+    "label": "Further training",
+    "title": "Certifications",
+    "lead": "Continuous learning, between engineering and AI. Tap any to view it.",
+    "close": "Close",
+    "langLabel": "Languages",
+    "langs": "Spanish (native) · Valencian (native) · English (B2)"
+  },
+  "cta": {
+    "label": "Next step",
+    "title": "Got a business and want AI to work for you?",
+    "body": "That's exactly what we do at NeoNexAI. Tell me what you need and I'll honestly tell you whether it fits — and how.",
+    "button": "Go to NeoNexAI Agency",
+    "secondary": "Email me"
+  },
+  "footer": {
+    "tagline": "Engineering + AI, with judgment.",
+    "rights": "Jonatan García Ripollés",
+    "built": "Built by me with Next.js"
+  },
+  "langToggle": {
+    "aria": "Switch language"
+  }
+}

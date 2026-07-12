@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "title": "Jonatan García Ripollés — Agentic Developer & AI Expert",
+    "description": "Ingeniero en Tecnologías Industriales, Agentic Developer y founder de NeoNexAI Agency. Diseño y opero sistemas de IA que trabajan de verdad: agentes de voz, automatizaciones y software a medida en producción."
+  },
+  "nav": {
+    "now": "Ahora",
+    "projects": "Proyectos",
+    "path": "Trayectoria",
+    "stack": "Stack",
+    "work": "Método",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "eyebrow": "Perfil",
+    "name": "Jonatan García Ripollés",
+    "roles": "Ingeniero en Tecnologías Industriales · Agentic Developer · AI Expert · CEO & Founder de NeoNexAI AGENCY",
+    "intro": "Diseño y opero sistemas de IA que trabajan de verdad: webs profesionales a medida, agentes de voz, asistentes al teléfono y automatizaciones para empresas, pymes y pequeños negocios que quieran automatizar sus procesos diarios.",
+    "ctaProjects": "Ver proyectos",
+    "ctaContact": "Hablar conmigo",
+    "location": "Castellón, España"
+  },
+  "now": {
+    "label": "Ahora",
+    "title": "Fundé NeoNexAI Agency.",
+    "body": "En 2026 monté mi propia agencia de IA para empresas y pymes. Todo lo que ves aquí abajo está en producción, con clientes reales — no son proyectos de fin de semana.",
+    "metricProjects": "servicios en producción",
+    "metricClients": "sectores atendidos",
+    "metricUptime": "operación de los agentes"
+  },
+  "projects": {
+    "label": "Proyectos en producción",
+    "title": "Lo que he construido",
+    "lead": "Cada proyecto está vivo y tiene enlace verificable. La prueba es que funciona con clientes, no la promesa.",
+    "live": "En producción",
+    "p1": {
+      "name": "neonexai.com",
+      "tag": "Web + producto",
+      "desc": "Landing cinemática scroll-driven y todo el ecosistema de marca de mi agencia. Diseñada, construida y operada por mí de principio a fin.",
+      "b1": "Next.js · React · animación GSAP ligada al scroll",
+      "b2": "Trilingüe, SEO técnico y analítica de conversión propia"
+    },
+    "p2": {
+      "name": "Portal de clientes",
+      "tag": "App web multi-tenant",
+      "desc": "App web para nuestros clientes donde pueden ver y gestionar todos sus servicios contratados desde un solo sitio.",
+      "b1": "Reservas, comandas y cocina en tiempo real por local",
+      "b2": "Academia de IA, entregables y facturación integradas"
+    },
+    "p3": {
+      "name": "Open-source projects",
+      "tag": "GitHub",
+      "desc": "Herramientas que publico abiertas, con clientes usándolas a diario.",
+      "b1": "Conectores de Claude a medida para un estudio de arquitectura: presupuestos, CAD y control horario (PyPI + npm, con CI)",
+      "b2": "Bot que mantiene el equipo activo 24/7 para minar puntos en la app de Grass sin depender de tenerlo delante"
+    },
+    "p4": {
+      "name": "Webs premium personalizadas",
+      "tag": "Diseño a medida",
+      "desc": "Webs de todo tipo para cualquier sector de servicios y más.",
+      "b1": "Restaurantes: reservas automáticas, carta digital con QR y confirmación por WhatsApp",
+      "b2": "Diseño propio por cliente — sin plantillas ni dependencias de terceros"
+    },
+    "p5": {
+      "name": "Agente de voz al teléfono",
+      "tag": "IA conversacional",
+      "desc": "Un asistente de IA que atiende el teléfono del negocio y trabaja mientras el equipo hace otras cosas.",
+      "b1": "Coge reservas automáticas y las cuadra con el aforo en tiempo real",
+      "b2": "Atiende a clientes y filtra llamadas de posibles leads, 24/7"
+    }
+  },
+  "path": {
+    "label": "Trayectoria",
+    "title": "De la ingeniería a los agentes",
+    "now": {
+      "period": "2026 — hoy",
+      "role": "Founder & CEO",
+      "org": "NeoNexAI Agency",
+      "desc": "De cero a sistemas en producción con clientes en cartera, en paralelo a mi trabajo en IGEX. Diseño la arquitectura, escribo el código y opero la infraestructura."
+    },
+    "igex": {
+      "period": "Abr 2024 — hoy",
+      "role": "Ingeniero técnico y manager de proyectos",
+      "org": "IGEX ESTUDIOS",
+      "desc": "Eficiencia energética: auditorías, certificaciones y sistemas térmicos complejos. He planificado y coordinado más de 10 proyectos simultáneos, con presupuestos de hasta más de 500.000 € en un solo proyecto. Aquí empezó todo: frustrado por las horas que se iban en tareas repetitivas, automaticé la gestión documental con Python y n8n y una tarea de 2 horas pasó a 5 minutos. Esa primera victoria me enganchó — desde entonces no he parado de crear agentes de IA y rediseñar procesos para que la máquina cargue con lo tedioso y las personas con el criterio."
+    },
+    "master": {
+      "period": "2022 — 2024",
+      "role": "Máster en Ingeniería Industrial",
+      "org": "Universitat Jaume I (UJI)",
+      "desc": "Optimización de sistemas, mejora de procesos (Lean, Six Sigma), gestión energética y sostenibilidad industrial."
+    },
+    "degree": {
+      "period": "2018 — 2022",
+      "role": "Grado en Ingeniería en Tecnologías Industriales",
+      "org": "Universitat Jaume I (UJI)",
+      "desc": "Fundamentos técnicos: termodinámica, mecánica de fluidos, sistemas térmicos, electricidad, materiales y proyectos de ingeniería."
+    },
+    "resto": {
+      "period": "2018 — 2022",
+      "role": "Camarero y ayudante de cocina",
+      "org": "Restaurante La Terraseta del Temple",
+      "desc": "Cuatro años de servicio bajo presión real, distinguido con el Solete de la Guía Repsol. La vida da vueltas completas: hoy su restaurante hermano, El Nou Temple, es cliente de mi agencia."
+    }
+  },
+  "stack": {
+    "label": "Stack",
+    "title": "Con lo que trabajo",
+    "ai": {
+      "title": "IA y agentes",
+      "items": "Claude Code · Arquitecturas multi-agente · MCP (conectores propios) · RAG · Ingeniería de contexto · Loop Engineering · Guardrails · VAPI (voz) · Orquestación de LLMs · Prompt engineering"
+    },
+    "dev": {
+      "title": "Desarrollo y automatización",
+      "items": "Python · TypeScript · Next.js y React · Docker · n8n · PostgreSQL / Supabase · APIs REST · Git · Webs 3D · Linux / VPS"
+    },
+    "eng": {
+      "title": "Ingeniería y energía",
+      "items": "Sistemas térmicos y HVAC · Energías renovables (solar, aerotermia, biomasa) · Auditorías energéticas · ISO 50.001 · CYPE · TESTO · AISLAM · Gestión de proyectos (Lean, Six Sigma)"
+    }
+  },
+  "work": {
+    "label": "Método",
+    "title": "Cómo trabajo",
+    "hitl": {
+      "title": "Humano al mando + Loop Engineering",
+      "body": "La IA hace el trabajo pesado; yo audito, itero y firmo el resultado. Trabajo con Loop Engineering: diseño el contexto y las instrucciones para que los agentes de código amplíen sus propias capacidades, autoevalúen lo que producen, verifiquen e iteren solos, y me entreguen a mí el resultado ya depurado. Nunca prometo lo que la tecnología no puede cumplir — la honestidad es el argumento."
+    },
+    "discipline": {
+      "title": "Disciplina de alto rendimiento",
+      "body": "Construí un ecosistema personal de entrenamiento, nutrición y descanso — no como propósito de nuevo año y nuevos objetivos, sino como pilar y base de mi día a día. Esa constancia estricta es la misma que aplico a cada proyecto: sistemas antes que impulsos, repetición antes que suerte. La resiliencia y la superación constante son el motor de cada arquitectura que orquesto."
+    },
+    "curiosity": {
+      "title": "Curiosidad de fondo",
+      "body": "Estudio física y física cuántica por curiosidad genuina y por la ambición de su posible fusión con la IA en el futuro. Sin buscar títulos: es una exploración que me da herramientas de análisis abstracto y creativo para deconstruir problemas técnicos desde ángulos que ningún curso de IA enseña."
+    }
+  },
+  "education": {
+    "label": "Formación complementaria",
+    "title": "Certificaciones",
+    "lead": "Formación continua, entre la ingeniería y la IA. Pulsa cualquiera para verlo.",
+    "close": "Cerrar",
+    "langLabel": "Idiomas",
+    "langs": "Castellano (nativo) · Valenciano (nativo) · Inglés (B2)"
+  },
+  "cta": {
+    "label": "Siguiente paso",
+    "title": "¿Tienes un negocio y quieres que la IA trabaje para ti?",
+    "body": "Eso es exactamente lo que hacemos en NeoNexAI. Cuéntame qué necesitas y te digo con honestidad si encaja — y cómo.",
+    "button": "Ir a NeoNexAI Agency",
+    "secondary": "Escríbeme"
+  },
+  "footer": {
+    "tagline": "Ingeniería + IA, con criterio.",
+    "rights": "Jonatan García Ripollés",
+    "built": "Construido por mí con Next.js"
+  },
+  "langToggle": {
+    "aria": "Cambiar idioma"
+  }
+}

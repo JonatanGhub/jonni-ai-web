@@ -1,0 +1,216 @@
+@import 'tailwindcss';
+
+/**
+ * jonni-ai.com — design system "blueprint técnico".
+ * Grafito oscuro + acento cobre. Motivo de plano de ingeniería: rejilla tenue,
+ * tipografía mono para anotaciones, marcas de corte en las esquinas.
+ * Identidad PROPIA — deliberadamente distinta del cian/azul de neonexai.com.
+ *
+ * Fuentes (next/font en layout.tsx): Archivo (display grotesca industrial),
+ * IBM Plex Sans (cuerpo), IBM Plex Mono (anotaciones técnicas).
+ */
+
+@theme {
+  /* ── Superficies (grafito cálido) ── */
+  --color-graphite-900: #0b0d10;
+  --color-graphite-850: #0e1116;
+  --color-graphite-800: #14181d;
+  --color-graphite-700: #1b2027;
+  --color-graphite-600: #262c34;
+
+  /* ── Acento cobre ── */
+  --color-copper: #c87d4b;
+  --color-copper-bright: #e0975f;
+  --color-copper-dim: #8a5836;
+
+  /* ── Tinta ── */
+  --color-ink: #ece8e1;
+  --color-ink-muted: #9aa0a6;
+  --color-ink-faint: #676d75;
+
+  /* ── Líneas del plano ── */
+  --color-line: rgba(200, 125, 75, 0.14);
+  --color-line-strong: rgba(200, 125, 75, 0.28);
+
+  --font-display: var(--font-archivo), sans-serif;
+  --font-body: var(--font-plex-sans), sans-serif;
+  --font-mono: var(--font-plex-mono), monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--color-graphite-900);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--color-graphite-900);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* Rejilla de plano técnico como fondo global (muy tenue, fija) */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(var(--color-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-line) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 120% 90% at 50% 0%, #000 20%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse 120% 90% at 50% 0%, #000 20%, transparent 80%);
+  opacity: 0.7;
+}
+
+/* Halo cobre ambiental arriba */
+body::after {
+  content: '';
+  position: fixed;
+  top: -30vh;
+  left: 50%;
+  width: 90vw;
+  height: 70vh;
+  transform: translateX(-50%);
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, rgba(200, 125, 75, 0.1), transparent 68%);
+  filter: blur(20px);
+}
+
+/* ============================================================
+   Tipografía
+   ============================================================ */
+.font-display { font-family: var(--font-display); }
+.font-mono { font-family: var(--font-mono); }
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  margin: 0;
+}
+
+/* Etiqueta técnica (§ número + nombre de sección) */
+.tech-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-copper);
+}
+.tech-label::before {
+  content: '§ ';
+  color: var(--color-ink-faint);
+}
+
+/* ============================================================
+   Motivos "plano técnico"
+   ============================================================ */
+
+/* Tarjeta con marcas de corte en las esquinas (crop marks) */
+.blueprint-card {
+  position: relative;
+  background: linear-gradient(180deg, var(--color-graphite-800), var(--color-graphite-850));
+  border: 1px solid var(--color-line-strong);
+  border-radius: 2px;
+}
+.blueprint-card::before,
+.blueprint-card::after {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-color: var(--color-copper);
+  border-style: solid;
+  opacity: 0.7;
+}
+.blueprint-card::before {
+  top: -1px;
+  left: -1px;
+  border-width: 1px 0 0 1px;
+}
+.blueprint-card::after {
+  bottom: -1px;
+  right: -1px;
+  border-width: 0 1px 1px 0;
+}
+.blueprint-card:hover {
+  border-color: var(--color-copper-dim);
+}
+
+/* Regla acotada tipo plano (separador con ticks) */
+.tech-rule {
+  height: 1px;
+  background: var(--color-line-strong);
+  position: relative;
+}
+.tech-rule::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -3px;
+  width: 1px;
+  height: 7px;
+  background: var(--color-copper);
+}
+
+/* ============================================================
+   Reveals on-scroll (RevealScope + [data-reveal])
+   Ocultación bajo html.js → sin JS todo visible.
+   ============================================================ */
+html.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+html.js [data-reveal].is-revealed {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  html.js [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  html { scroll-behavior: auto; }
+}
+
+/* ============================================================
+   Timeline vertical scroll-drawn (Trayectoria)
+   La línea se "dibuja" con el scroll (stroke-dashoffset controlado por GSAP).
+   ============================================================ */
+.timeline-track {
+  stroke: var(--color-copper);
+  stroke-width: 2;
+  fill: none;
+  stroke-linecap: round;
+}
+
+/* Foco accesible coherente */
+:focus-visible {
+  outline: 2px solid var(--color-copper);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: rgba(200, 125, 75, 0.3);
+  color: var(--color-ink);
+}
