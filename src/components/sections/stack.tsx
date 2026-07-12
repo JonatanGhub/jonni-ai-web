@@ -32,7 +32,7 @@ export async function Stack() {
                 {items.map((item) => (
                   <li
                     key={item}
-                    className="rounded-[2px] border border-[var(--color-line)] bg-[var(--color-graphite-700)]/40 px-2.5 py-1 font-mono text-[12px] text-[var(--color-ink-muted)]"
+                    className="rounded-[2px] border border-[var(--color-line)] bg-[var(--color-graphite-700)]/40 px-2.5 py-1.5 font-mono text-[13px] text-[var(--color-ink-muted)]"
                   >
                     {item}
                   </li>

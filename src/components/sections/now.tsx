@@ -16,7 +16,7 @@ export async function Now() {
         >
           {t('title')}
         </h2>
-        <p data-reveal className="max-w-md text-[16px] leading-relaxed text-[var(--color-ink-muted)]">
+        <p data-reveal className="max-w-md text-[17.5px] leading-relaxed text-[var(--color-ink-muted)]">
           {t('body')}
         </p>
       </div>

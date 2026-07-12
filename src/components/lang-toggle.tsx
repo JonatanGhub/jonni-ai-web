@@ -1,14 +1,20 @@
 'use client';
 
 /**
- * LangToggle — conmutador ES/EN (cookie NEXT_LOCALE + router.refresh()).
- * Sin i18n routing: el Server Component relee la cookie y sirve el otro idioma.
- * Bilingüe → un solo botón que alterna, no un desplegable.
+ * LangToggle — conmutador ES/EN con bandera + código (cookie NEXT_LOCALE +
+ * router.refresh()). Sin i18n routing: el Server Component relee la cookie y
+ * sirve el otro idioma. Bilingüe → dos pastillas, la activa resaltada.
  */
 
 import { useRouter } from 'next/navigation';
 import { useCallback, useEffect, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
+import { FlagES, FlagEN } from '@/components/flags';
+
+const LOCALES = [
+  { code: 'es', label: 'ES', Flag: FlagES },
+  { code: 'en', label: 'EN', Flag: FlagEN },
+] as const;
 
 export function LangToggle() {
   const t = useTranslations('langToggle');
@@ -30,27 +36,29 @@ export function LangToggle() {
 
   return (
     <div
-      className="flex items-center gap-1 font-mono text-[12px]"
+      className="flex items-center gap-1.5 rounded-[3px] border border-[var(--color-line-strong)] bg-[var(--color-graphite-800)]/60 p-1"
       role="group"
       aria-label={t('aria')}
     >
-      {(['es', 'en'] as const).map((code, i) => (
-        <span key={code} className="flex items-center gap-1">
-          {i > 0 && <span className="text-[var(--color-ink-faint)]">/</span>}
+      {LOCALES.map(({ code, label, Flag }) => {
+        const on = current === code;
+        return (
           <button
+            key={code}
             type="button"
             onClick={() => switchTo(code)}
-            aria-pressed={current === code}
-            className={
-              current === code
-                ? 'uppercase tracking-wider text-[var(--color-copper)]'
-                : 'uppercase tracking-wider text-[var(--color-ink-faint)] transition-colors hover:text-[var(--color-ink-muted)]'
-            }
+            aria-pressed={on}
+            className={`flex items-center gap-1.5 rounded-[2px] px-2.5 py-1.5 font-mono text-[13px] font-medium tracking-wider transition-colors ${
+              on
+                ? 'bg-[var(--color-copper)] text-[var(--color-graphite-900)]'
+                : 'text-[var(--color-ink-muted)] hover:text-[var(--color-ink)]'
+            }`}
           >
-            {code}
+            <Flag className="h-[13px] w-[18px] shrink-0 overflow-hidden rounded-[1.5px]" />
+            {label}
           </button>
-        </span>
-      ))}
+        );
+      })}
     </div>
   );
 }

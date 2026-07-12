@@ -24,11 +24,11 @@ export async function Method() {
       <div className="mt-12 grid gap-4 lg:grid-cols-3">
         {CONCEPTS.map((c) => (
           <article key={c.key} data-reveal className="blueprint-card flex flex-col p-6">
-            <span className="font-mono text-[12px] text-[var(--color-ink-faint)]">§ {c.num}</span>
-            <h3 className="mt-4 text-[19px] font-semibold text-[var(--color-ink)]">
+            <span className="font-mono text-[13px] text-[var(--color-copper)]">[{c.num}]</span>
+            <h3 className="mt-4 text-[20px] font-semibold text-[var(--color-ink)]">
               {t(`${c.key}.title`)}
             </h3>
-            <p className="mt-3 text-[15px] leading-relaxed text-[var(--color-ink-muted)]">
+            <p className="mt-3 text-[16.5px] leading-relaxed text-[var(--color-ink-muted)]">
               {t(`${c.key}.body`)}
             </p>
           </article>

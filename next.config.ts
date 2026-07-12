@@ -6,6 +6,9 @@ const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  // Oculta el indicador de dev (Route/Bundler/Issues) de la esquina; es solo
+  // ruido de desarrollo — en producción no existe.
+  devIndicators: false,
 };
 
 export default withNextIntl(nextConfig);

@@ -22,7 +22,7 @@ export async function Projects() {
       >
         {t('title')}
       </h2>
-      <p data-reveal className="mt-5 max-w-xl text-[16px] leading-relaxed text-[var(--color-ink-muted)]">
+      <p data-reveal className="mt-5 max-w-xl text-[17.5px] leading-relaxed text-[var(--color-ink-muted)]">
         {t('lead')}
       </p>
 
@@ -36,8 +36,8 @@ export async function Projects() {
             >
               <div className="flex items-start justify-between gap-4">
                 <div className="flex items-center gap-3">
-                  <span className="font-mono text-[12px] text-[var(--color-ink-faint)]">
-                    § {p.num}
+                  <span className="font-mono text-[13px] text-[var(--color-copper)]">
+                    [{p.num}]
                   </span>
                   <span className="rounded-[2px] border border-[var(--color-line-strong)] px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--color-copper)]">
                     {t(`${p.key}.tag`)}
@@ -49,7 +49,7 @@ export async function Projects() {
                 </span>
               </div>
 
-              <h3 className="mt-4 text-[22px] font-semibold text-[var(--color-ink)]">
+              <h3 className="mt-4 text-[24px] font-semibold text-[var(--color-ink)]">
                 {t(`${p.key}.name`)}
                 {p.href && (
                   <span className="ml-2 inline-block text-[var(--color-copper)] transition-transform group-hover:translate-x-0.5">
@@ -58,7 +58,7 @@ export async function Projects() {
                 )}
               </h3>
 
-              <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-[var(--color-ink-muted)]">
+              <p className="mt-3 max-w-2xl text-[16.5px] leading-relaxed text-[var(--color-ink-muted)]">
                 {t(`${p.key}.desc`)}
               </p>
 
@@ -66,7 +66,7 @@ export async function Projects() {
                 {(['b1', 'b2'] as const).map((b) => (
                   <li
                     key={b}
-                    className="flex gap-2.5 font-mono text-[12.5px] leading-relaxed text-[var(--color-ink-muted)]"
+                    className="flex gap-2.5 font-mono text-[13px] leading-relaxed text-[var(--color-ink-muted)]"
                   >
                     <span className="mt-2 inline-block h-px w-3 shrink-0 bg-[var(--color-copper)]" />
                     {t(`${p.key}.${b}`)}

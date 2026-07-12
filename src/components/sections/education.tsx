@@ -32,7 +32,7 @@ export async function Education() {
           <p className="mt-1 font-mono text-[13px] text-[var(--color-ink-muted)]">{t('langs')}</p>
         </div>
       </div>
-      <p data-reveal className="mt-5 max-w-xl text-[15px] leading-relaxed text-[var(--color-ink-muted)]">
+      <p data-reveal className="mt-5 max-w-xl text-[16.5px] leading-relaxed text-[var(--color-ink-muted)]">
         {t('lead')}
       </p>
 

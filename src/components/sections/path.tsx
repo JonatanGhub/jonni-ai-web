@@ -86,13 +86,13 @@ export function Path() {
               <p className="font-mono text-[12px] uppercase tracking-[0.14em] text-[var(--color-ink-faint)]">
                 {t(`${item}.period`)}
               </p>
-              <h3 className="mt-1.5 text-[19px] font-semibold text-[var(--color-ink)]">
+              <h3 className="mt-1.5 text-[20px] font-semibold text-[var(--color-ink)]">
                 {t(`${item}.role`)}
               </h3>
-              <p className="mt-0.5 font-mono text-[13px] text-[var(--color-copper)]">
+              <p className="mt-0.5 font-mono text-[14px] text-[var(--color-copper)]">
                 {t(`${item}.org`)}
               </p>
-              <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-[var(--color-ink-muted)]">
+              <p className="mt-3 max-w-2xl text-[16.5px] leading-relaxed text-[var(--color-ink-muted)]">
                 {t(`${item}.desc`)}
               </p>
             </li>

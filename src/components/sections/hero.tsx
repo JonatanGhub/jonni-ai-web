@@ -25,14 +25,14 @@ export async function Hero() {
 
           <p
             data-reveal
-            className="mt-6 max-w-xl font-mono text-[13px] leading-relaxed tracking-wide text-[var(--color-copper-bright)]"
+            className="mt-6 max-w-xl font-mono text-[14px] leading-relaxed tracking-wide text-[var(--color-copper-bright)]"
           >
             {t('roles')}
           </p>
 
           <p
             data-reveal
-            className="mt-7 max-w-xl text-[16px] leading-relaxed text-[var(--color-ink-muted)]"
+            className="mt-7 max-w-xl text-[17.5px] leading-relaxed text-[var(--color-ink-muted)]"
           >
             {t('intro')}
           </p>
@@ -40,24 +40,16 @@ export async function Hero() {
           <div data-reveal className="mt-9 flex flex-wrap items-center gap-3">
             <a
               href="#projects"
-              className="rounded-[3px] bg-[var(--color-copper)] px-6 py-3 text-[14px] font-semibold text-[var(--color-graphite-900)] transition-colors hover:bg-[var(--color-copper-bright)]"
+              className="rounded-[3px] bg-[var(--color-copper)] px-6 py-3.5 text-[15px] font-semibold text-[var(--color-graphite-900)] transition-colors hover:bg-[var(--color-copper-bright)]"
             >
               {t('ctaProjects')}
             </a>
             <a
               href="#contact"
-              className="rounded-[3px] border border-[var(--color-line-strong)] px-6 py-3 text-[14px] font-medium text-[var(--color-ink)] transition-colors hover:border-[var(--color-copper)]"
+              className="rounded-[3px] border border-[var(--color-line-strong)] px-6 py-3.5 text-[15px] font-medium text-[var(--color-ink)] transition-colors hover:border-[var(--color-copper)]"
             >
               {t('ctaContact')}
             </a>
-          </div>
-
-          <div
-            data-reveal
-            className="mt-8 flex items-center gap-2 font-mono text-[12px] text-[var(--color-ink-faint)]"
-          >
-            <span className="inline-block h-1.5 w-1.5 rounded-full bg-[var(--color-copper)]" />
-            {t('location')}
           </div>
         </div>
 
