@@ -1,0 +1,13 @@
+import { renderToBuffer } from '@react-pdf/renderer';
+import { CvDocument } from '@/lib/cv/cv-document';
+
+export async function GET() {
+  const buffer = await renderToBuffer(CvDocument({ locale: 'en' }));
+  return new Response(new Uint8Array(buffer), {
+    headers: {
+      'Content-Type': 'application/pdf',
+      'Content-Disposition': 'attachment; filename="jonatan-garcia-ripolles-cv-en.pdf"',
+      'Cache-Control': 'public, max-age=3600',
+    },
+  });
+}

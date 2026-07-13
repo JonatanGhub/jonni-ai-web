@@ -1,8 +1,9 @@
 import Image from 'next/image';
-import { getTranslations } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 
 export async function Hero() {
   const t = await getTranslations('hero');
+  const locale = await getLocale();
 
   return (
     <section
@@ -49,6 +50,12 @@ export async function Hero() {
               className="rounded-[3px] border border-[var(--color-line-strong)] px-6 py-3.5 text-[15px] font-medium text-[var(--color-ink)] transition-colors hover:border-[var(--color-copper)]"
             >
               {t('ctaContact')}
+            </a>
+            <a
+              href={`/cv-${locale}`}
+              className="px-1 py-3.5 font-mono text-[13px] text-[var(--color-ink-muted)] transition-colors hover:text-[var(--color-copper)]"
+            >
+              {t('ctaDownload')}
             </a>
           </div>
         </div>
