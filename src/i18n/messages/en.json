@@ -117,7 +117,9 @@
     "eng": {
       "title": "Engineering and energy",
       "items": "Thermal systems and HVAC · Renewables (solar, aerothermal, biomass) · Energy audits · ISO 50001 · CYPE · TESTO · AISLAM · Project management (Lean, Six Sigma)"
-    }
+    },
+    "langLabel": "Languages",
+    "langs": "Spanish (native) · Valencian (native) · English (B2)"
   },
   "work": {
     "label": "Method",
@@ -134,14 +136,6 @@
       "title": "Curiosity underneath",
       "body": "I study physics and quantum physics out of genuine curiosity and for the ambition of its possible fusion with AI in the future. Without chasing credentials: it's an exploration that gives me tools for abstract, creative analysis to deconstruct technical problems from angles no AI course teaches."
     }
-  },
-  "education": {
-    "label": "Further training",
-    "title": "Certifications",
-    "lead": "Continuous learning, between engineering and AI. Tap any to view it.",
-    "close": "Close",
-    "langLabel": "Languages",
-    "langs": "Spanish (native) · Valencian (native) · English (B2)"
   },
   "cta": {
     "label": "Next step",

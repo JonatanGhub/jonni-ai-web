@@ -117,7 +117,9 @@
     "eng": {
       "title": "Ingeniería y energía",
       "items": "Sistemas térmicos y HVAC · Energías renovables (solar, aerotermia, biomasa) · Auditorías energéticas · ISO 50.001 · CYPE · TESTO · AISLAM · Gestión de proyectos (Lean, Six Sigma)"
-    }
+    },
+    "langLabel": "Idiomas",
+    "langs": "Castellano (nativo) · Valenciano (nativo) · Inglés (B2)"
   },
   "work": {
     "label": "Método",
@@ -134,14 +136,6 @@
       "title": "Curiosidad de fondo",
       "body": "Estudio física y física cuántica por curiosidad genuina y por la ambición de su posible fusión con la IA en el futuro. Sin buscar títulos: es una exploración que me da herramientas de análisis abstracto y creativo para deconstruir problemas técnicos desde ángulos que ningún curso de IA enseña."
     }
-  },
-  "education": {
-    "label": "Formación complementaria",
-    "title": "Certificaciones",
-    "lead": "Formación continua, entre la ingeniería y la IA. Pulsa cualquiera para verlo.",
-    "close": "Cerrar",
-    "langLabel": "Idiomas",
-    "langs": "Castellano (nativo) · Valenciano (nativo) · Inglés (B2)"
   },
   "cta": {
     "label": "Siguiente paso",

@@ -42,6 +42,14 @@ export async function Stack() {
           );
         })}
       </div>
+
+      <div
+        data-reveal
+        className="mt-8 flex flex-wrap items-center gap-3 font-mono text-[13px] text-[var(--color-ink-muted)]"
+      >
+        <span className="uppercase tracking-[0.14em] text-[var(--color-copper)]">{t('langLabel')}</span>
+        <span>{t('langs')}</span>
+      </div>
     </section>
   );
 }

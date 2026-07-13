@@ -3,7 +3,7 @@ import { EmailReveal } from '@/components/ui/email-reveal';
 
 const LINKS = [
   { label: 'GitHub', href: 'https://github.com/JonatanGhub' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jónatan-garcía-ripollés-9271052a5/' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jonatan-garcia-ripolles/' },
 ];
 
 export async function SiteFooter() {

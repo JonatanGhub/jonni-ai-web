@@ -43,7 +43,6 @@ const styles = StyleSheet.create({
   sideLine: { fontSize: 9, lineHeight: 1.6, color: INK_MUTED, marginBottom: 2 },
   stackGroupTitle: { fontSize: 8.8, fontFamily: 'Helvetica-Bold', color: INK, marginTop: 6, marginBottom: 2 },
   stackItems: { fontSize: 8.3, lineHeight: 1.5, color: INK_MUTED },
-  certItem: { fontSize: 8.3, lineHeight: 1.55, color: INK_MUTED },
   footer: {
     position: 'absolute',
     bottom: 20,
@@ -119,13 +118,6 @@ export function CvDocument({ locale }: { locale: CvLocale }) {
                 <Text style={styles.stackGroupTitle}>{group.title}</Text>
                 <Text style={styles.stackItems}>{group.items}</Text>
               </View>
-            ))}
-
-            <Text style={[styles.sectionLabel, styles.sectionSpacing]}>{c.certificationsLabel}</Text>
-            {c.certifications.map((title, i) => (
-              <Text key={i} style={styles.certItem}>
-                · {title}
-              </Text>
             ))}
 
             <Text style={[styles.sectionLabel, styles.sectionSpacing]}>{c.languagesLabel}</Text>
