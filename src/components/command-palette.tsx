@@ -80,11 +80,11 @@ export function CommandPalette() {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="hidden items-center gap-1.5 rounded-[2px] border border-[var(--color-line-strong)] px-2.5 py-1.5 font-mono text-[11px] uppercase tracking-[0.1em] text-[var(--color-ink-faint)] transition-colors hover:border-[var(--color-copper)] hover:text-[var(--color-copper)] sm:flex"
+        className="flex items-center gap-1.5 rounded-[2px] border border-[var(--color-line-strong)] px-2.5 py-1.5 font-mono text-[11px] uppercase tracking-[0.1em] text-[var(--color-ink-faint)] transition-colors hover:border-[var(--color-copper)] hover:text-[var(--color-copper)]"
         aria-label={t('hint')}
       >
         <span>{t('hint')}</span>
-        <span className="text-[10px]">⌘K</span>
+        <span className="hidden text-[10px] sm:inline">⌘K</span>
       </button>
 
       <Command.Dialog
