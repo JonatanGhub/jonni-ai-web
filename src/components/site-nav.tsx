@@ -1,6 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import { LangToggle } from '@/components/lang-toggle';
 import { NavLinks } from '@/components/nav-links';
+import { CommandPalette } from '@/components/command-palette';
 
 export async function SiteNav() {
   const t = await getTranslations('nav');
@@ -30,7 +31,10 @@ export async function SiteNav() {
           <NavLinks items={items} />
         </nav>
 
-        <LangToggle />
+        <div className="flex items-center gap-3">
+          <CommandPalette />
+          <LangToggle />
+        </div>
       </div>
     </header>
   );

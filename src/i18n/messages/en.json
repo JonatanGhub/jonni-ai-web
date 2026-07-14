@@ -36,6 +36,7 @@
   "projects": {
     "label": "Projects in production",
     "title": "What I've built",
+    "reposLabel": "Public repos (real GitHub data)",
     "lead": "Every project is live and verifiable. The proof is that it works with clients, not the promise.",
     "live": "In production",
     "p1": {
@@ -158,6 +159,21 @@
     "i9": { "tool": "Git", "desc": "Every change is versioned and reversible." },
     "i10": { "tool": "Linux / own VPS", "desc": "I'd rather control the infrastructure than rent it by request." }
   },
+  "commandPalette": {
+    "hint": "Commands",
+    "placeholder": "Type a command or search...",
+    "empty": "No results.",
+    "groupNav": "Navigate",
+    "groupActions": "Actions",
+    "groupLinks": "Links",
+    "downloadCv": "Download CV",
+    "copyEmail": "Copy email",
+    "copyEmailDone": "Email copied ✓",
+    "toEs": "Cambiar a español",
+    "toEn": "Switch to English",
+    "github": "Open GitHub",
+    "linkedin": "Open LinkedIn"
+  },
   "cta": {
     "label": "Next step",
     "title": "Got a business and want AI to work for you?",
@@ -173,5 +189,8 @@
   },
   "langToggle": {
     "aria": "Switch language"
+  },
+  "terminal": {
+    "label": "Hidden terminal"
   }
 }

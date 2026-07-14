@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server';
+import { GithubStats } from '@/components/github-stats';
 
 const PROJECTS = [
   { key: 'p1', num: '01', href: 'https://neonexai.com', span: 'md:col-span-3' },
@@ -93,6 +94,10 @@ export async function Projects() {
             </div>
           );
         })}
+      </div>
+
+      <div data-reveal>
+        <GithubStats />
       </div>
     </section>
   );

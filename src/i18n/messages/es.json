@@ -37,6 +37,7 @@
     "label": "Proyectos en producción",
     "title": "Lo que he construido",
     "lead": "Cada proyecto está vivo y tiene enlace verificable. La prueba es que funciona con clientes, no la promesa.",
+    "reposLabel": "Repos públicos (datos reales de GitHub)",
     "live": "En producción",
     "p1": {
       "name": "neonexai.com",
@@ -158,6 +159,21 @@
     "i9": { "tool": "Git", "desc": "Todo cambio queda versionado y es reversible." },
     "i10": { "tool": "Linux / VPS propio", "desc": "Prefiero controlar la infraestructura a alquilarla por request." }
   },
+  "commandPalette": {
+    "hint": "Comandos",
+    "placeholder": "Escribe un comando o busca...",
+    "empty": "Sin resultados.",
+    "groupNav": "Navegar",
+    "groupActions": "Acciones",
+    "groupLinks": "Enlaces",
+    "downloadCv": "Descargar CV",
+    "copyEmail": "Copiar email",
+    "copyEmailDone": "Email copiado ✓",
+    "toEs": "Cambiar a español",
+    "toEn": "Switch to English",
+    "github": "Abrir GitHub",
+    "linkedin": "Abrir LinkedIn"
+  },
   "cta": {
     "label": "Siguiente paso",
     "title": "¿Tienes un negocio y quieres que la IA trabaje para ti?",
@@ -173,5 +189,8 @@
   },
   "langToggle": {
     "aria": "Cambiar idioma"
+  },
+  "terminal": {
+    "label": "Terminal oculta"
   }
 }

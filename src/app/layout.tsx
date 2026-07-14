@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getTranslations } from 'next-intl/server';
 import { LenisProvider } from '@/components/providers/lenis-provider';
 import { RevealScope } from '@/lib/animation/reveal-scope';
+import { TerminalEasterEgg } from '@/components/terminal-easter-egg';
 import './globals.css';
 
 const archivo = Archivo({
@@ -52,6 +53,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <NextIntlClientProvider>
           <LenisProvider>{children}</LenisProvider>
           <RevealScope />
+          <TerminalEasterEgg />
         </NextIntlClientProvider>
       </body>
     </html>
