@@ -195,12 +195,23 @@ html.js [data-reveal].is-revealed {
 /* ============================================================
    Timeline vertical scroll-drawn (Trayectoria)
    La línea se "dibuja" con el scroll (stroke-dashoffset controlado por GSAP).
+   Único "momento fuerte" del sitio: los nodos se encienden en cobre al
+   activarse su <li> (RevealScope añade .is-revealed), reforzando la
+   sensación de que la línea los va prendiendo a su paso.
    ============================================================ */
 .timeline-track {
   stroke: var(--color-copper);
   stroke-width: 2;
   fill: none;
   stroke-linecap: round;
+}
+
+.timeline-node {
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+html.js [data-reveal].is-revealed .timeline-node {
+  background: var(--color-copper);
+  box-shadow: 0 0 0 5px rgba(200, 125, 75, 0.16);
 }
 
 /* Foco accesible coherente */

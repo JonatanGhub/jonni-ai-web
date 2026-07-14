@@ -80,7 +80,7 @@ export function Path() {
             <li key={item} data-reveal className="relative">
               {/* Nodo */}
               <span className="absolute left-[-30px] top-1.5 flex h-4 w-4 items-center justify-center sm:left-[-38px]">
-                <span className="h-2.5 w-2.5 rounded-full border border-[var(--color-copper)] bg-[var(--color-graphite-900)]" />
+                <span className="timeline-node h-2.5 w-2.5 rounded-full border border-[var(--color-copper)] bg-[var(--color-graphite-900)]" />
               </span>
 
               <p className="font-mono text-[12px] uppercase tracking-[0.14em] text-[var(--color-ink-faint)]">

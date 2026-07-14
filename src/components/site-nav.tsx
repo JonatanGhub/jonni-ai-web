@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import { LangToggle } from '@/components/lang-toggle';
+import { NavLinks } from '@/components/nav-links';
 
 export async function SiteNav() {
   const t = await getTranslations('nav');
@@ -9,7 +10,7 @@ export async function SiteNav() {
     { href: '#path', key: 'path' },
     { href: '#stack', key: 'stack' },
     { href: '#work', key: 'work' },
-  ] as const;
+  ].map((it) => ({ ...it, label: t(it.key) }));
 
   return (
     <header className="fixed inset-x-0 top-0 z-40 border-b border-[var(--color-line)] bg-[var(--color-graphite-900)]/70 backdrop-blur-md">
@@ -26,15 +27,7 @@ export async function SiteNav() {
           aria-label="Secciones"
           className="hidden items-center gap-7 font-mono text-[13px] uppercase tracking-[0.14em] text-[var(--color-ink-muted)] md:flex"
         >
-          {items.map((it) => (
-            <a
-              key={it.key}
-              href={it.href}
-              className="transition-colors hover:text-[var(--color-copper)]"
-            >
-              {t(it.key)}
-            </a>
-          ))}
+          <NavLinks items={items} />
         </nav>
 
         <LangToggle />

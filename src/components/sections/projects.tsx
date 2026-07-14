@@ -1,11 +1,11 @@
 import { getTranslations } from 'next-intl/server';
 
 const PROJECTS = [
-  { key: 'p1', num: '01', href: 'https://neonexai.com' },
-  { key: 'p2', num: '02', href: 'https://app.neonexai.com' },
-  { key: 'p3', num: '03', href: 'https://github.com/JonatanGhub' },
-  { key: 'p4', num: '04', href: null },
-  { key: 'p5', num: '05', href: null },
+  { key: 'p1', num: '01', href: 'https://neonexai.com', span: 'md:col-span-3' },
+  { key: 'p2', num: '02', href: 'https://app.neonexai.com', span: 'md:col-span-2' },
+  { key: 'p3', num: '03', href: 'https://github.com/JonatanGhub', span: 'md:col-span-1' },
+  { key: 'p4', num: '04', href: null, span: 'md:col-span-1' },
+  { key: 'p5', num: '05', href: null, span: 'md:col-span-2' },
 ] as const;
 
 export async function Projects() {
@@ -26,13 +26,13 @@ export async function Projects() {
         {t('lead')}
       </p>
 
-      <div className="mt-14 grid gap-4 md:grid-cols-2">
-        {PROJECTS.map((p, i) => {
+      <div className="mt-14 grid gap-4 md:grid-cols-3">
+        {PROJECTS.map((p) => {
           const inner = (
             <article
               className={`blueprint-card flex h-full flex-col p-6 transition-transform ${
                 p.href ? 'group-hover:-translate-y-1' : ''
-              } ${i === 0 ? 'md:col-span-2' : ''}`}
+              }`}
             >
               <div className="flex items-start justify-between gap-4">
                 <div className="flex items-center gap-3">
@@ -77,7 +77,7 @@ export async function Projects() {
           );
 
           return (
-            <div key={p.key} data-reveal className={`group ${i === 0 ? 'md:col-span-2' : ''}`}>
+            <div key={p.key} data-reveal className={`group ${p.span}`}>
               {p.href ? (
                 <a
                   href={p.href}
