@@ -31,6 +31,12 @@ export async function SiteFooter() {
               {s.label}
             </a>
           ))}
+          <a
+            href="/uses"
+            className="text-[var(--color-ink-muted)] transition-colors hover:text-[var(--color-copper)]"
+          >
+            {t('usesLink')}
+          </a>
           {/* Email = popup con el correo, sin redirigir a ninguna parte */}
           <EmailReveal label="Email" variant="link" />
         </nav>

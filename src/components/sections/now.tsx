@@ -49,6 +49,14 @@ export async function Now() {
           </dd>
         </div>
       </dl>
+
+      <p
+        data-reveal
+        className="mt-10 flex items-baseline gap-2 font-mono text-[13px] leading-relaxed text-[var(--color-ink-muted)]"
+      >
+        <span className="shrink-0 uppercase tracking-[0.14em] text-[var(--color-copper)]">{t('focusLabel')}</span>
+        <span>{t('focus')}</span>
+      </p>
     </section>
   );
 }

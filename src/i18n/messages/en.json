@@ -20,13 +20,18 @@
     "ctaContact": "Talk to me",
     "ctaDownload": "Download CV ↓"
   },
+  "manifesto": {
+    "line": "I don't sell AI magic — I sell systems you can audit, verify and repeat. If it can't survive a real client, it doesn't leave my machine."
+  },
   "now": {
     "label": "Now",
     "title": "I founded NeoNexAI Agency.",
     "body": "In 2026 I started my own AI agency for companies and SMBs. Everything below is in production, with real clients — not weekend projects.",
     "metricProjects": "services in production",
     "metricClients": "sectors served",
-    "metricUptime": "agent operation"
+    "metricUptime": "agent operation",
+    "focusLabel": "Current focus",
+    "focus": "Shipping the point-of-sale module for restaurants and refining how my coding agents verify their own work before handing it back to me."
   },
   "projects": {
     "label": "Projects in production",
@@ -36,35 +41,35 @@
     "p1": {
       "name": "neonexai.com",
       "tag": "Web + product",
-      "desc": "Scroll-driven cinematic landing and the whole brand ecosystem for my agency. Designed, built and operated by me end to end.",
+      "desc": "Most AI agency landings look the same. Mine had to prove what I sell, not just describe it — so I designed, built and run it myself, end to end.",
       "b1": "Next.js · React · scroll-linked GSAP animation",
       "b2": "Trilingual, technical SEO and custom conversion analytics"
     },
     "p2": {
       "name": "Client portal",
       "tag": "Multi-tenant web app",
-      "desc": "A web app where our clients see and manage every service they've hired, all in one place.",
+      "desc": "My clients were hiring several different services with nowhere to see them together. I built a multi-tenant app where each one manages their own from a single place.",
       "b1": "Bookings, orders and kitchen in real time, per venue",
       "b2": "AI academy, deliverables and billing built in"
     },
     "p3": {
       "name": "Open-source projects",
       "tag": "GitHub",
-      "desc": "Tools I ship in the open, with clients using them daily.",
+      "desc": "When a client's problem didn't have a tool that solved it well, I built one and shipped it in the open — now they use it daily.",
       "b1": "Custom Claude connectors for an architecture studio: quotes, CAD and time tracking (PyPI + npm, with CI)",
       "b2": "A bot that keeps the machine active 24/7 to mine Grass points without having to sit in front of it"
     },
     "p4": {
       "name": "Custom premium websites",
       "tag": "Bespoke design",
-      "desc": "Websites of all kinds for any service sector and beyond.",
+      "desc": "Generic templates don't hold up for a real business. I design every website from scratch, per client — restaurants with bookings and QR menus, and any other service sector.",
       "b1": "Restaurants: automatic bookings, digital QR menu and WhatsApp confirmation",
       "b2": "Bespoke design per client — no templates, no third-party lock-in"
     },
     "p5": {
       "name": "Phone voice agent",
       "tag": "Conversational AI",
-      "desc": "An AI assistant that answers the business phone and works while the team does other things.",
+      "desc": "The phone was still the bottleneck for my restaurant clients. I built a voice agent that answers it on its own, with no shifts and no interruptions for the team.",
       "b1": "Takes bookings automatically and matches them to live capacity",
       "b2": "Handles customers and screens potential-lead calls, 24/7"
     }
@@ -137,6 +142,22 @@
       "body": "I study physics and quantum physics out of genuine curiosity and for the ambition of its possible fusion with AI in the future. Without chasing credentials: it's an exploration that gives me tools for abstract, creative analysis to deconstruct technical problems from angles no AI course teaches."
     }
   },
+  "uses": {
+    "label": "/uses",
+    "title": "What I use",
+    "lead": "Not the stack I sell — what I actually keep open on my own desk every day.",
+    "back": "← Back",
+    "i1": { "tool": "Claude Code", "desc": "My editor and terminal at once; I supervise, I don't type every line." },
+    "i2": { "tool": "In-house LLM gateway (LiteLLM)", "desc": "One entry point to several models, with fallback if one goes down." },
+    "i3": { "tool": "Next.js + React", "desc": "The default framework for any website or portal I build." },
+    "i4": { "tool": "Supabase (self-hosted)", "desc": "Database and auth on my own VPS, not a third party's cloud." },
+    "i5": { "tool": "Coolify", "desc": "I deploy every project in containers, with no PaaS lock-in." },
+    "i6": { "tool": "Docker", "desc": "Everything running on the VPS runs in a container, reproducibly." },
+    "i7": { "tool": "n8n", "desc": "Automations that don't need a full AI agent." },
+    "i8": { "tool": "VAPI", "desc": "The voice engine behind the agents that answer the phone." },
+    "i9": { "tool": "Git", "desc": "Every change is versioned and reversible." },
+    "i10": { "tool": "Linux / own VPS", "desc": "I'd rather control the infrastructure than rent it by request." }
+  },
   "cta": {
     "label": "Next step",
     "title": "Got a business and want AI to work for you?",
@@ -147,7 +168,8 @@
   "footer": {
     "tagline": "Engineering + AI, with judgment.",
     "rights": "Jonatan García Ripollés",
-    "built": "Built by me with Next.js"
+    "built": "Built by me with Next.js",
+    "usesLink": "/uses"
   },
   "langToggle": {
     "aria": "Switch language"

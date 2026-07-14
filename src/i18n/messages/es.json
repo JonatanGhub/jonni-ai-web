@@ -20,13 +20,18 @@
     "ctaContact": "Hablar conmigo",
     "ctaDownload": "Descargar CV ↓"
   },
+  "manifesto": {
+    "line": "No vendo magia de IA — vendo sistemas que se pueden auditar, verificar y repetir. Si no sobrevive a un cliente real, no sale de mi ordenador."
+  },
   "now": {
     "label": "Ahora",
     "title": "Fundé NeoNexAI Agency.",
     "body": "En 2026 monté mi propia agencia de IA para empresas y pymes. Todo lo que ves aquí abajo está en producción, con clientes reales — no son proyectos de fin de semana.",
     "metricProjects": "servicios en producción",
     "metricClients": "sectores atendidos",
-    "metricUptime": "operación de los agentes"
+    "metricUptime": "operación de los agentes",
+    "focusLabel": "Foco actual",
+    "focus": "Cerrando el módulo de caja (TPV) para restaurantes y afinando cómo mis agentes de código verifican su propio trabajo antes de entregármelo."
   },
   "projects": {
     "label": "Proyectos en producción",
@@ -36,35 +41,35 @@
     "p1": {
       "name": "neonexai.com",
       "tag": "Web + producto",
-      "desc": "Landing cinemática scroll-driven y todo el ecosistema de marca de mi agencia. Diseñada, construida y operada por mí de principio a fin.",
+      "desc": "La mayoría de landings de agencias de IA se parecen entre sí. La mía tenía que demostrar lo que vendo, no solo describirlo — así que la diseñé, construí y opero yo mismo, de principio a fin.",
       "b1": "Next.js · React · animación GSAP ligada al scroll",
       "b2": "Trilingüe, SEO técnico y analítica de conversión propia"
     },
     "p2": {
       "name": "Portal de clientes",
       "tag": "App web multi-tenant",
-      "desc": "App web para nuestros clientes donde pueden ver y gestionar todos sus servicios contratados desde un solo sitio.",
+      "desc": "Mis clientes contrataban varios servicios distintos y no tenían dónde verlos juntos. Construí una app multi-tenant donde cada uno gestiona lo suyo desde un solo sitio.",
       "b1": "Reservas, comandas y cocina en tiempo real por local",
       "b2": "Academia de IA, entregables y facturación integradas"
     },
     "p3": {
       "name": "Open-source projects",
       "tag": "GitHub",
-      "desc": "Herramientas que publico abiertas, con clientes usándolas a diario.",
+      "desc": "Cuando el problema de un cliente no tenía una herramienta que lo resolviera bien, la construí yo y la publiqué en abierto — ahora la usan a diario.",
       "b1": "Conectores de Claude a medida para un estudio de arquitectura: presupuestos, CAD y control horario (PyPI + npm, con CI)",
       "b2": "Bot que mantiene el equipo activo 24/7 para minar puntos en la app de Grass sin depender de tenerlo delante"
     },
     "p4": {
       "name": "Webs premium personalizadas",
       "tag": "Diseño a medida",
-      "desc": "Webs de todo tipo para cualquier sector de servicios y más.",
+      "desc": "Las plantillas genéricas no aguantan un negocio real. Diseño cada web desde cero, por cliente — restaurantes con reservas y carta QR, y cualquier otro sector de servicios.",
       "b1": "Restaurantes: reservas automáticas, carta digital con QR y confirmación por WhatsApp",
       "b2": "Diseño propio por cliente — sin plantillas ni dependencias de terceros"
     },
     "p5": {
       "name": "Agente de voz al teléfono",
       "tag": "IA conversacional",
-      "desc": "Un asistente de IA que atiende el teléfono del negocio y trabaja mientras el equipo hace otras cosas.",
+      "desc": "El teléfono seguía siendo el cuello de botella de mis clientes de restauración. Monté un agente de voz que lo atiende solo, sin turnos ni interrupciones para el equipo.",
       "b1": "Coge reservas automáticas y las cuadra con el aforo en tiempo real",
       "b2": "Atiende a clientes y filtra llamadas de posibles leads, 24/7"
     }
@@ -137,6 +142,22 @@
       "body": "Estudio física y física cuántica por curiosidad genuina y por la ambición de su posible fusión con la IA en el futuro. Sin buscar títulos: es una exploración que me da herramientas de análisis abstracto y creativo para deconstruir problemas técnicos desde ángulos que ningún curso de IA enseña."
     }
   },
+  "uses": {
+    "label": "/uses",
+    "title": "Lo que uso",
+    "lead": "No es el stack con el que vendo — es lo que tengo abierto en mi propio escritorio cada día.",
+    "back": "← Volver",
+    "i1": { "tool": "Claude Code", "desc": "Mi editor y mi terminal a la vez; superviso, no tecleo cada línea." },
+    "i2": { "tool": "Gateway propio de LLMs (LiteLLM)", "desc": "Un único punto de entrada a varios modelos, con fallback si uno falla." },
+    "i3": { "tool": "Next.js + React", "desc": "El framework por defecto para cualquier web o portal que construyo." },
+    "i4": { "tool": "Supabase (self-host)", "desc": "Base de datos y auth en mi propio VPS, no en la nube de un tercero." },
+    "i5": { "tool": "Coolify", "desc": "Despliego cada proyecto en contenedores, sin depender de un PaaS de terceros." },
+    "i6": { "tool": "Docker", "desc": "Todo lo que corre en el VPS corre en un contenedor, reproducible." },
+    "i7": { "tool": "n8n", "desc": "Automatizaciones que no necesitan un agente de IA completo." },
+    "i8": { "tool": "VAPI", "desc": "El motor de voz detrás de los agentes que atienden el teléfono." },
+    "i9": { "tool": "Git", "desc": "Todo cambio queda versionado y es reversible." },
+    "i10": { "tool": "Linux / VPS propio", "desc": "Prefiero controlar la infraestructura a alquilarla por request." }
+  },
   "cta": {
     "label": "Siguiente paso",
     "title": "¿Tienes un negocio y quieres que la IA trabaje para ti?",
@@ -147,7 +168,8 @@
   "footer": {
     "tagline": "Ingeniería + IA, con criterio.",
     "rights": "Jonatan García Ripollés",
-    "built": "Construido por mí con Next.js"
+    "built": "Construido por mí con Next.js",
+    "usesLink": "/uses"
   },
   "langToggle": {
     "aria": "Cambiar idioma"
