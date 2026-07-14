@@ -1,4 +1,4 @@
-import { Document, Link, Page, StyleSheet, Text, View } from '@react-pdf/renderer';
+import { Document, Image, Link, Page, StyleSheet, Text, View } from '@react-pdf/renderer';
 import { type CvLocale, getCvContent } from './content';
 
 const COPPER = '#9a5f37';
@@ -17,7 +17,12 @@ const styles = StyleSheet.create({
   },
   name: { fontSize: 22, fontFamily: 'Helvetica-Bold', color: INK },
   roles: { marginTop: 4, fontSize: 10, color: COPPER, fontFamily: 'Helvetica-Bold' },
-  contactRow: { marginTop: 8, flexDirection: 'row', flexWrap: 'wrap', gap: 14, fontSize: 9 },
+  timelineRow: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'baseline', marginTop: 10, gap: 5 },
+  timelineItem: { flexDirection: 'row', alignItems: 'baseline', gap: 3 },
+  timelineYear: { fontSize: 8.5, fontFamily: 'Helvetica-Bold', color: COPPER },
+  timelineLabel: { fontSize: 8.5, color: INK_MUTED },
+  timelineSep: { fontSize: 8.5, color: LINE, marginHorizontal: 2 },
+  contactRow: { marginTop: 10, flexDirection: 'row', flexWrap: 'wrap', gap: 14, fontSize: 9 },
   contactItem: { color: INK_MUTED },
   link: { color: COPPER, textDecoration: 'none' },
   rule: { marginTop: 14, marginBottom: 14, height: 1.4, backgroundColor: COPPER },
@@ -52,13 +57,16 @@ const styles = StyleSheet.create({
     borderTopColor: LINE,
     paddingTop: 6,
     flexDirection: 'row',
+    alignItems: 'center',
     justifyContent: 'space-between',
     fontSize: 7.6,
     color: INK_MUTED,
   },
+  footerRight: { flexDirection: 'row', alignItems: 'center', gap: 6 },
+  qr: { width: 26, height: 26 },
 });
 
-export function CvDocument({ locale }: { locale: CvLocale }) {
+export function CvDocument({ locale, qrDataUri }: { locale: CvLocale; qrDataUri: string }) {
   const c = getCvContent(locale);
 
   return (
@@ -66,6 +74,16 @@ export function CvDocument({ locale }: { locale: CvLocale }) {
       <Page size="A4" style={styles.page}>
         <Text style={styles.name}>{c.name}</Text>
         <Text style={styles.roles}>{c.roles}</Text>
+
+        <View style={styles.timelineRow}>
+          {c.timeline.map((item, i) => (
+            <View key={item.year} style={styles.timelineItem}>
+              {i > 0 && <Text style={styles.timelineSep}>·</Text>}
+              <Text style={styles.timelineYear}>{item.year}</Text>
+              <Text style={styles.timelineLabel}>{item.label}</Text>
+            </View>
+          ))}
+        </View>
 
         <View style={styles.contactRow}>
           <Text style={styles.contactItem}>{c.email}</Text>
@@ -127,7 +145,10 @@ export function CvDocument({ locale }: { locale: CvLocale }) {
 
         <View style={styles.footer} fixed>
           <Text>{c.tagline}</Text>
-          <Text>{c.site}</Text>
+          <View style={styles.footerRight}>
+            <Text>{c.site}</Text>
+            <Image src={qrDataUri} style={styles.qr} />
+          </View>
         </View>
       </Page>
     </Document>

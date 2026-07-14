@@ -8,6 +8,21 @@ const LABELS = {
   en: { experience: 'Experience', education: 'Education' },
 };
 
+const TIMELINE = {
+  es: [
+    { year: '2018', label: 'Ingeniería' },
+    { year: '2022', label: 'Máster' },
+    { year: '2024', label: 'IGEX' },
+    { year: '2026', label: 'NeoNexAI' },
+  ],
+  en: [
+    { year: '2018', label: 'Engineering' },
+    { year: '2022', label: "Master's" },
+    { year: '2024', label: 'IGEX' },
+    { year: '2026', label: 'NeoNexAI' },
+  ],
+};
+
 export type CvLocale = keyof typeof MESSAGES;
 
 export function getCvContent(locale: CvLocale) {
@@ -32,5 +47,6 @@ export function getCvContent(locale: CvLocale) {
     experienceLabel: LABELS[locale].experience,
     educationLabel: LABELS[locale].education,
     tagline: m.footer.tagline,
+    timeline: TIMELINE[locale],
   };
 }

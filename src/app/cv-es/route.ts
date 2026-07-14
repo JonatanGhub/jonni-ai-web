@@ -1,8 +1,10 @@
 import { renderToBuffer } from '@react-pdf/renderer';
 import { CvDocument } from '@/lib/cv/cv-document';
+import { generateQrDataUri } from '@/lib/cv/qr';
 
 export async function GET() {
-  const buffer = await renderToBuffer(CvDocument({ locale: 'es' }));
+  const qrDataUri = await generateQrDataUri();
+  const buffer = await renderToBuffer(CvDocument({ locale: 'es', qrDataUri }));
   return new Response(new Uint8Array(buffer), {
     headers: {
       'Content-Type': 'application/pdf',
