@@ -5,6 +5,7 @@ import { getLocale, getTranslations } from 'next-intl/server';
 import { LenisProvider } from '@/components/providers/lenis-provider';
 import { RevealScope } from '@/lib/animation/reveal-scope';
 import { TerminalEasterEgg } from '@/components/terminal-easter-egg';
+import { CvChatWidget } from '@/components/cv-chat-widget';
 import './globals.css';
 
 const archivo = Archivo({
@@ -54,6 +55,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <LenisProvider>{children}</LenisProvider>
           <RevealScope />
           <TerminalEasterEgg />
+          <CvChatWidget />
         </NextIntlClientProvider>
       </body>
     </html>

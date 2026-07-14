@@ -192,5 +192,16 @@
   },
   "terminal": {
     "label": "Terminal oculta"
+  },
+  "cvChat": {
+    "hint": "Pregúntale al CV",
+    "title": "Pregúntale al CV",
+    "disclaimer": "Respuestas basadas solo en este CV — no inventa datos.",
+    "placeholder": "Escribe tu pregunta...",
+    "send": "Enviar",
+    "close": "Cerrar",
+    "rateLimited": "Demasiadas preguntas seguidas — prueba de nuevo en un rato.",
+    "genericError": "No he podido responder ahora mismo. Escríbeme directamente si quieres.",
+    "greeting": "Pregúntame sobre mi experiencia, proyectos o stack."
   }
 }

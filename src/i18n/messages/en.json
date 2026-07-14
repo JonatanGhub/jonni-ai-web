@@ -192,5 +192,16 @@
   },
   "terminal": {
     "label": "Hidden terminal"
+  },
+  "cvChat": {
+    "hint": "Ask the CV",
+    "title": "Ask the CV",
+    "disclaimer": "Answers based only on this CV — it doesn't make things up.",
+    "placeholder": "Type your question...",
+    "send": "Send",
+    "close": "Close",
+    "rateLimited": "Too many questions in a row — try again in a bit.",
+    "genericError": "I couldn't answer right now. Email me directly if you'd like.",
+    "greeting": "Ask me about my experience, projects or stack."
   }
 }
