@@ -1,4 +1,5 @@
 import { SiteNav } from '@/components/site-nav';
+import { TerminalIntro } from '@/components/terminal-intro';
 import { Hero } from '@/components/sections/hero';
 import { Manifesto } from '@/components/sections/manifesto';
 import { Now } from '@/components/sections/now';
@@ -14,6 +15,7 @@ export default function Page() {
     <>
       <SiteNav />
       <main className="relative z-10">
+        <TerminalIntro />
         <Hero />
         <Manifesto />
         <Now />

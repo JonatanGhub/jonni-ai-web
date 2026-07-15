@@ -8,7 +8,7 @@ export async function Hero() {
   return (
     <section
       id="top"
-      className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-center px-5 pb-20 pt-28"
+      className="relative mx-auto flex min-h-[90svh] max-w-6xl flex-col justify-center px-5 pb-20 pt-10"
     >
       <div className="grid items-center gap-12 lg:grid-cols-[1.35fr_1fr]">
         {/* Texto */}
