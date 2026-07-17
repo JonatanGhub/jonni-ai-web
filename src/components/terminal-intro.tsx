@@ -18,7 +18,7 @@ const SPINNER_FRAMES = ['·', '✢', '✳', '✵', '✻', '✽', '✻', '✵', '
 const TYPE_MS = 26; // por carácter del comando
 const LINE_MS = 420; // entre líneas de salida
 const WORK_MS = 900; // respiro del spinner antes de la primera tool line
-const HOLD_MS = 1500; // pausa con el guion completo antes de rotar
+const HOLD_MS = 4000; // pausa con el guion completo antes de rotar
 const STATIC_MS = 6000; // rotación en prefers-reduced-motion
 
 export function TerminalIntro() {
