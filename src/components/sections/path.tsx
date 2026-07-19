@@ -54,13 +54,13 @@ export function Path() {
   }, [reducedMotion]);
 
   return (
-    <section id="path" className="relative mx-auto max-w-6xl px-5 py-24 sm:py-28">
+    <section id="path" className="sec relative mx-auto max-w-6xl px-5">
       <p className="tech-label" data-reveal>
         {t('label')}
       </p>
       <h2
         data-reveal
-        className="mt-5 max-w-2xl text-[clamp(2rem,4.5vw,3.2rem)] font-semibold text-[var(--color-ink)]"
+        className="d-h2 mt-6 max-w-2xl text-[var(--color-ink)]"
       >
         {t('title')}
       </h2>

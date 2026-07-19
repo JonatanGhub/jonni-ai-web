@@ -118,6 +118,55 @@ h1, h2, h3 {
 }
 
 /* ============================================================
+   Escala y ritmo docmo (playbook §2)
+   Titulares grandes con leading corto y tracking negativo; el
+   scroll se reparte DESIGUAL entre secciones — cada una hace
+   una sola cosa y se gana el siguiente scroll.
+   ============================================================ */
+.d-display {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 6.5vw, 5.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+}
+.d-h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.8vw, 3.6rem);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  font-weight: 600;
+}
+.d-lead {
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  line-height: 1.6;
+  color: var(--color-ink-muted);
+}
+/* Quote de founder — el remate serio del sitio (patrón docmo §2.2) */
+.d-quote {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3.6vw, 2.9rem);
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  text-wrap: balance;
+}
+
+/* Ritmo vertical desigual */
+.sec-tight { padding-block: clamp(3.5rem, 7vw, 6rem); }
+.sec { padding-block: clamp(5rem, 11vw, 9rem); }
+.sec-wide { padding-block: clamp(7rem, 15vw, 13rem); }
+
+/* Stagger de reveals — cascada, no bloque */
+html.js [data-reveal][data-delay='1'] { transition-delay: 0.08s; }
+html.js [data-reveal][data-delay='2'] { transition-delay: 0.16s; }
+html.js [data-reveal][data-delay='3'] { transition-delay: 0.24s; }
+html.js [data-reveal][data-delay='4'] { transition-delay: 0.32s; }
+@media (prefers-reduced-motion: reduce) {
+  html.js [data-reveal][data-delay] { transition-delay: 0s; }
+}
+
+/* ============================================================
    Motivos "plano técnico"
    ============================================================ */
 

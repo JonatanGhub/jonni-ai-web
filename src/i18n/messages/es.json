@@ -20,8 +20,30 @@
     "ctaContact": "Hablar conmigo",
     "ctaDownload": "Descargar CV ↓"
   },
+  "promise": {
+    "label": "La promesa",
+    "headline": "En producción, o no cuenta.",
+    "sub": "Todo lo que ves en esta web atiende a clientes reales cada día. Sin maquetas, sin demos de fin de semana, sin capturas de algo que nunca se desplegó.",
+    "p1": {
+      "title": "Enlace verificable",
+      "body": "Cada proyecto tiene una URL que puedes abrir o un repositorio que puedes leer. La prueba no es lo que cuento: es que funciona."
+    },
+    "p2": {
+      "title": "Humano al mando",
+      "body": "La IA carga con el trabajo pesado; yo audito, itero y firmo. Nada sale sin que lo haya revisado."
+    },
+    "p3": {
+      "title": "Infraestructura propia",
+      "body": "Servidor, contenedores y base de datos bajo mi control. Ni cajas negras ni dependencias que se caen cuando cambian de precio."
+    },
+    "p4": {
+      "title": "Te digo que no",
+      "body": "Si lo que necesitas no encaja o la tecnología no llega, lo sabrás antes de empezar. La honestidad es el argumento."
+    }
+  },
   "manifesto": {
-    "line": "No vendo magia de IA — vendo sistemas que se pueden auditar, verificar y repetir. Si no sobrevive a un cliente real, no sale de mi ordenador."
+    "line": "No vendo magia de IA — vendo sistemas que se pueden auditar, verificar y repetir. Si no sobrevive a un cliente real, no sale de mi ordenador.",
+    "attribution": "Jonatan García Ripollés · NeoNexAI"
   },
   "now": {
     "label": "Ahora",

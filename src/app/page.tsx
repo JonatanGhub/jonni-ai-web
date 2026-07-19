@@ -1,6 +1,7 @@
 import { SiteNav } from '@/components/site-nav';
 import { TerminalIntro } from '@/components/terminal-intro';
 import { Hero } from '@/components/sections/hero';
+import { PromiseSection } from '@/components/sections/promise';
 import { Manifesto } from '@/components/sections/manifesto';
 import { Now } from '@/components/sections/now';
 import { Projects } from '@/components/sections/projects';
@@ -17,6 +18,7 @@ export default function Page() {
       <main className="relative z-10">
         <TerminalIntro />
         <Hero />
+        <PromiseSection />
         <Manifesto />
         <Now />
         <Projects />

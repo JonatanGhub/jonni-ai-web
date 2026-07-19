@@ -20,8 +20,30 @@
     "ctaContact": "Talk to me",
     "ctaDownload": "Download CV ↓"
   },
+  "promise": {
+    "label": "The promise",
+    "headline": "In production, or it doesn't count.",
+    "sub": "Everything on this site serves real clients every day. No mockups, no weekend demos, no screenshots of something that never shipped.",
+    "p1": {
+      "title": "A link you can check",
+      "body": "Every project has a URL you can open or a repository you can read. The proof isn't what I claim: it's that it works."
+    },
+    "p2": {
+      "title": "Human in charge",
+      "body": "AI does the heavy lifting; I audit, iterate and sign off. Nothing ships without me reviewing it."
+    },
+    "p3": {
+      "title": "My own infrastructure",
+      "body": "Server, containers and database under my control. No black boxes, no dependencies that fall over when they change their pricing."
+    },
+    "p4": {
+      "title": "I'll tell you no",
+      "body": "If what you need doesn't fit, or the technology isn't there yet, you'll know before we start. Honesty is the argument."
+    }
+  },
   "manifesto": {
-    "line": "I don't sell AI magic — I sell systems you can audit, verify and repeat. If it can't survive a real client, it doesn't leave my machine."
+    "line": "I don't sell AI magic — I sell systems you can audit, verify and repeat. If it can't survive a real client, it doesn't leave my machine.",
+    "attribution": "Jonatan García Ripollés · NeoNexAI"
   },
   "now": {
     "label": "Now",

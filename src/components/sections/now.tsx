@@ -5,14 +5,14 @@ export async function Now() {
   const t = await getTranslations('now');
 
   return (
-    <section id="now" className="relative mx-auto max-w-6xl px-5 py-24 sm:py-32">
+    <section id="now" className="sec-wide relative mx-auto max-w-6xl px-5">
       <p className="tech-label" data-reveal>
         {t('label')}
       </p>
       <div className="mt-6 grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-end">
         <h2
           data-reveal
-          className="max-w-xl text-[clamp(2rem,4.5vw,3.2rem)] font-semibold text-[var(--color-ink)]"
+          className="d-h2 max-w-xl text-[var(--color-ink)]"
         >
           {t('title')}
         </h2>
