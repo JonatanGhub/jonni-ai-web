@@ -3,6 +3,7 @@ import { TerminalIntro } from '@/components/terminal-intro';
 import { Hero } from '@/components/sections/hero';
 import { PromiseSection } from '@/components/sections/promise';
 import { Manifesto } from '@/components/sections/manifesto';
+import { Capabilities } from '@/components/sections/capabilities';
 import { Now } from '@/components/sections/now';
 import { Projects } from '@/components/sections/projects';
 import { Path } from '@/components/sections/path';
@@ -20,6 +21,7 @@ export default function Page() {
         <Hero />
         <PromiseSection />
         <Manifesto />
+        <Capabilities />
         <Now />
         <Projects />
         <Path />

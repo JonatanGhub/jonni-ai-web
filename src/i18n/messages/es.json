@@ -45,6 +45,58 @@
     "line": "No vendo magia de IA — vendo sistemas que se pueden auditar, verificar y repetir. Si no sobrevive a un cliente real, no sale de mi ordenador.",
     "attribution": "Jonatan García Ripollés · NeoNexAI"
   },
+  "capabilities": {
+    "label": "Qué hago",
+    "title": "Seis piezas que encajan entre sí.",
+    "lead": "No son servicios sueltos de un catálogo: cada una se apoya en las demás. Toca cualquiera para ver qué hay detrás.",
+    "hub": "Sistemas de IA",
+    "hubHint": "toca un nodo",
+    "tap": "👆 toca un nodo",
+    "connected": "Conectado con",
+    "close": "Cerrar",
+    "agents": {
+      "name": "Agentes",
+      "badge": "Multi-agente",
+      "title": "Agentes que trabajan solos",
+      "desc": "Diseño el contexto y los guardrails para que los agentes hagan la tarea, verifiquen su propio trabajo e iteren antes de entregármelo.",
+      "proof": "Un agente de trading opera con guardrails matemáticos inmutables; otros cierran tareas de empresa a diario."
+    },
+    "web": {
+      "name": "Webs",
+      "badge": "A medida",
+      "title": "Webs diseñadas desde cero",
+      "desc": "Sin plantillas. Cada web se diseña para el negocio que la va a usar y se despliega en infraestructura que controlo yo.",
+      "proof": "Restaurantes con reservas, carta QR y confirmación por WhatsApp, en producción con clientes reales."
+    },
+    "voice": {
+      "name": "Voz",
+      "badge": "24/7",
+      "title": "Agentes que cogen el teléfono",
+      "desc": "El teléfono era el cuello de botella de mis clientes de restauración. Ahora lo atiende un agente que no hace turnos.",
+      "proof": "Coge reservas y las cuadra con el aforo en tiempo real, sin interrumpir al equipo de sala."
+    },
+    "automation": {
+      "name": "Automatización",
+      "badge": "Procesos",
+      "title": "Lo tedioso, a la máquina",
+      "desc": "Rediseño el proceso primero y automatizo después. Automatizar un proceso malo solo lo hace más rápido.",
+      "proof": "La gestión documental que me llevaba 2 horas al día pasó a 5 minutos. Ahí empezó todo."
+    },
+    "mcp": {
+      "name": "Conectores",
+      "badge": "MCP",
+      "title": "Conectores a medida",
+      "desc": "Cuando la herramienta que necesita un cliente no existe, la construyo y la publico en abierto.",
+      "proof": "Conectores de presupuestos, CAD y control horario publicados en PyPI y npm, con CI y en uso diario."
+    },
+    "infra": {
+      "name": "Infra",
+      "badge": "VPS",
+      "title": "Infraestructura bajo control",
+      "desc": "Servidor propio, contenedores y base de datos self-host. Sin cajas negras ni facturas que se disparan por request.",
+      "proof": "Todo lo que ves aquí corre en mi VPS: contenedores, base de datos y despliegue automático."
+    }
+  },
   "now": {
     "label": "Ahora",
     "title": "Fundé NeoNexAI Agency.",
@@ -95,7 +147,8 @@
       "desc": "El teléfono seguía siendo el cuello de botella de mis clientes de restauración. Monté un agente de voz que lo atiende solo, sin turnos ni interrupciones para el equipo.",
       "b1": "Coge reservas automáticas y las cuadra con el aforo en tiempo real",
       "b2": "Atiende a clientes y filtra llamadas de posibles leads, 24/7"
-    }
+    },
+    "dragHint": "Arrastra · se mueve sola"
   },
   "path": {
     "label": "Trayectoria",
@@ -170,16 +223,46 @@
     "title": "Lo que uso",
     "lead": "No es el stack con el que vendo — es lo que tengo abierto en mi propio escritorio cada día.",
     "back": "← Volver",
-    "i1": { "tool": "Claude Code", "desc": "Mi editor y mi terminal a la vez; superviso, no tecleo cada línea." },
-    "i2": { "tool": "Gateway propio de LLMs (LiteLLM)", "desc": "Un único punto de entrada a varios modelos, con fallback si uno falla." },
-    "i3": { "tool": "Next.js + React", "desc": "El framework por defecto para cualquier web o portal que construyo." },
-    "i4": { "tool": "Supabase (self-host)", "desc": "Base de datos y auth en mi propio VPS, no en la nube de un tercero." },
-    "i5": { "tool": "Coolify", "desc": "Despliego cada proyecto en contenedores, sin depender de un PaaS de terceros." },
-    "i6": { "tool": "Docker", "desc": "Todo lo que corre en el VPS corre en un contenedor, reproducible." },
-    "i7": { "tool": "n8n", "desc": "Automatizaciones que no necesitan un agente de IA completo." },
-    "i8": { "tool": "VAPI", "desc": "El motor de voz detrás de los agentes que atienden el teléfono." },
-    "i9": { "tool": "Git", "desc": "Todo cambio queda versionado y es reversible." },
-    "i10": { "tool": "Linux / VPS propio", "desc": "Prefiero controlar la infraestructura a alquilarla por request." }
+    "i1": {
+      "tool": "Claude Code",
+      "desc": "Mi editor y mi terminal a la vez; superviso, no tecleo cada línea."
+    },
+    "i2": {
+      "tool": "Gateway propio de LLMs (LiteLLM)",
+      "desc": "Un único punto de entrada a varios modelos, con fallback si uno falla."
+    },
+    "i3": {
+      "tool": "Next.js + React",
+      "desc": "El framework por defecto para cualquier web o portal que construyo."
+    },
+    "i4": {
+      "tool": "Supabase (self-host)",
+      "desc": "Base de datos y auth en mi propio VPS, no en la nube de un tercero."
+    },
+    "i5": {
+      "tool": "Coolify",
+      "desc": "Despliego cada proyecto en contenedores, sin depender de un PaaS de terceros."
+    },
+    "i6": {
+      "tool": "Docker",
+      "desc": "Todo lo que corre en el VPS corre en un contenedor, reproducible."
+    },
+    "i7": {
+      "tool": "n8n",
+      "desc": "Automatizaciones que no necesitan un agente de IA completo."
+    },
+    "i8": {
+      "tool": "VAPI",
+      "desc": "El motor de voz detrás de los agentes que atienden el teléfono."
+    },
+    "i9": {
+      "tool": "Git",
+      "desc": "Todo cambio queda versionado y es reversible."
+    },
+    "i10": {
+      "tool": "Linux / VPS propio",
+      "desc": "Prefiero controlar la infraestructura a alquilarla por request."
+    }
   },
   "commandPalette": {
     "hint": "Comandos",

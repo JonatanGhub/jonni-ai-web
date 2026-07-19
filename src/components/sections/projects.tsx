@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import { GithubStats } from '@/components/github-stats';
+import { Showreel } from '@/components/showreel';
 
 const PROJECTS = [
   { key: 'p1', num: '01', href: 'https://neonexai.com', span: 'md:col-span-3' },
@@ -27,7 +28,9 @@ export async function Projects() {
         {t('lead')}
       </p>
 
-      <div className="mt-14 grid gap-4 md:grid-cols-3">
+      <Showreel items={PROJECTS.map((p) => ({ key: p.key, num: p.num, href: p.href }))} />
+
+      <div className="mt-16 grid gap-4 md:grid-cols-3">
         {PROJECTS.map((p) => {
           const inner = (
             <article
