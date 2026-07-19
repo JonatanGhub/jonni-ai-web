@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { getLocale, getTranslations } from 'next-intl/server';
+import { Hologram } from '@/components/hologram';
 
 export async function Hero() {
   const t = await getTranslations('hero');
@@ -10,6 +11,9 @@ export async function Hero() {
       id="top"
       className="relative mx-auto flex min-h-[90svh] max-w-6xl flex-col justify-center px-5 pb-20 pt-10"
     >
+      {/* Ambiente: red de agentes rotando. No interactúa ni reacciona al scroll. */}
+      <Hologram className="absolute right-0 top-1/2 -z-10 h-[min(78vh,680px)] w-full -translate-y-1/2 opacity-70 lg:left-auto lg:w-[62%]" />
+
       <div className="grid items-center gap-12 lg:grid-cols-[1.35fr_1fr]">
         {/* Texto */}
         <div>
