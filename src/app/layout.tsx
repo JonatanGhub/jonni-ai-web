@@ -6,6 +6,7 @@ import { LenisProvider } from '@/components/providers/lenis-provider';
 import { RevealScope } from '@/lib/animation/reveal-scope';
 import { TerminalEasterEgg } from '@/components/terminal-easter-egg';
 import { CvChatWidget } from '@/components/cv-chat-widget';
+import { IntroOverlay } from '@/components/intro-overlay';
 import './globals.css';
 
 const archivo = Archivo({
@@ -54,6 +55,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <NextIntlClientProvider>
           <LenisProvider>{children}</LenisProvider>
           <RevealScope />
+          <IntroOverlay />
           <TerminalEasterEgg />
           <CvChatWidget />
         </NextIntlClientProvider>

@@ -11,6 +11,13 @@
     "work": "Método",
     "contact": "Contacto"
   },
+  "intro": {
+    "kicker": "Jonatan García Ripollés",
+    "title": "Sistemas de IA que trabajan de verdad.",
+    "start": "Entrar",
+    "skip": "Saltar intro",
+    "sound": "Con sonido · auriculares recomendados"
+  },
   "hero": {
     "eyebrow": "Perfil",
     "name": "Jonatan García Ripollés",

@@ -11,6 +11,13 @@
     "work": "Method",
     "contact": "Contact"
   },
+  "intro": {
+    "kicker": "Jonatan García Ripollés",
+    "title": "AI systems that actually work.",
+    "start": "Enter",
+    "skip": "Skip intro",
+    "sound": "With sound · headphones recommended"
+  },
   "hero": {
     "eyebrow": "Profile",
     "name": "Jonatan García Ripollés",
