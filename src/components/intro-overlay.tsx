@@ -21,7 +21,6 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Hologram } from '@/components/hologram';
 
-const SEEN_KEY = 'jonni-intro-seen';
 const DRONE_SECONDS = 7; // el drone acompaña la transición y se apaga solo
 
 export function IntroOverlay() {
@@ -32,18 +31,12 @@ export function IntroOverlay() {
   const audioRef = useRef<AudioContext | null>(null);
 
   // Decisión en cliente tras montar: nunca en SSR (evita desincronía y flash).
+  // Aparece en cada carga (decisión de Jonatan) — solo se salta con reduced-motion.
   useEffect(() => {
-    let seen = false;
-    try {
-      seen = sessionStorage.getItem(SEEN_KEY) === '1';
-    } catch {
-      /* sessionStorage bloqueado (modo privado estricto) → tratar como visto */
-      seen = true;
-    }
     const reduced =
       typeof window !== 'undefined' &&
       window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (!seen && !reduced) setVisible(true);
+    if (!reduced) setVisible(true);
   }, []);
 
   // Bloquear el scroll del fondo mientras la puerta está abierta.
@@ -120,11 +113,6 @@ export function IntroOverlay() {
   const dismiss = useCallback(
     (withSound: boolean) => {
       if (withSound) playDrone();
-      try {
-        sessionStorage.setItem(SEEN_KEY, '1');
-      } catch {
-        /* sin sessionStorage: se volverá a ver, no es crítico */
-      }
       setClosing(true);
       window.setTimeout(() => setVisible(false), 700);
     },
