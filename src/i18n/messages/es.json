@@ -320,5 +320,40 @@
     "label": "WhatsApp",
     "aria": "Escríbeme por WhatsApp",
     "prefill": "Hola Jonatan, he visto tu web y quería comentarte una cosa."
+  },
+  "contact": {
+    "label": "Siguiente paso",
+    "title": "¿Hablamos de tu proyecto?",
+    "lead": "Cuéntame qué necesitas y te digo con honestidad si encaja — y cómo. Sin compromiso y sin humo.",
+    "photoCaption": "Jonatan · NeoNexAI",
+    "reply": "Respondo en <24 h",
+    "g1": "Te respondo yo, no un bot ni un comercial.",
+    "g2": "Primera valoración honesta y sin compromiso.",
+    "g3": "Si no encaja, te lo digo — y por qué.",
+    "waDirect": "WhatsApp directo",
+    "emailBtn": "Ver email",
+    "waIntro": "Hola Jonatan, he visto tu web y quería comentarte una cosa.",
+    "fName": "Nombre",
+    "fReach": "Email o teléfono",
+    "fNeed": "Qué necesitas",
+    "fWhen": "Cuándo empezar",
+    "fMessage": "Cuéntame un poco",
+    "phName": "Tu nombre",
+    "phReach": "Cómo te contesto",
+    "phSelect": "Elige una opción",
+    "phMessage": "Qué tienes en mente (opcional)",
+    "need": {
+      "web": "Una web a medida",
+      "voice": "Agente de voz al teléfono",
+      "automation": "Automatizar un proceso",
+      "unsure": "Aún no lo sé"
+    },
+    "when": {
+      "asap": "Cuanto antes",
+      "month": "Este mes",
+      "exploring": "Solo explorando"
+    },
+    "send": "Enviar por WhatsApp",
+    "sendNote": "El botón abre WhatsApp con tu mensaje ya escrito. Lo revisas y le das a enviar."
   }
 }
