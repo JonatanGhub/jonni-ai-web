@@ -315,5 +315,10 @@
     "rateLimited": "Demasiadas preguntas seguidas — prueba de nuevo en un rato.",
     "genericError": "No he podido responder ahora mismo. Escríbeme directamente si quieres.",
     "greeting": "Pregúntame sobre mi experiencia, proyectos o stack."
+  },
+  "whatsapp": {
+    "label": "WhatsApp",
+    "aria": "Escríbeme por WhatsApp",
+    "prefill": "Hola Jonatan, he visto tu web y quería comentarte una cosa."
   }
 }

@@ -315,5 +315,10 @@
     "rateLimited": "Too many questions in a row — try again in a bit.",
     "genericError": "I couldn't answer right now. Email me directly if you'd like.",
     "greeting": "Ask me about my experience, projects or stack."
+  },
+  "whatsapp": {
+    "label": "WhatsApp",
+    "aria": "Message me on WhatsApp",
+    "prefill": "Hi Jonatan, I saw your site and wanted to run something by you."
   }
 }
